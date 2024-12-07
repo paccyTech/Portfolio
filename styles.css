@@ -1,0 +1,295 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+}
+
+/* Header Section (Hero) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;    /* Centers the content horizontally */
+    background-color: white;
+    color: black;
+    padding: 60px 20px;         /* Padding adjusted for better spacing */
+    height: 400px;              /* Fixed height for a balanced hero section */
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 300px;              /* Fixed width for the image */
+    height: 300px;             /* Fixed height for the image */
+    object-fit: cover;
+    border-radius: 50%;        /* Make the image circular */
+    margin-left: 20px;         /* Adds some space between the text and image */
+    margin-top: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(74, 144, 226, 1); 
+    padding: 10px 0;
+    position: sticky;          /* Make the nav stick to the top */
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: rgba(30, 58, 95, 1); /* Highlight color for hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.projects, .services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;    /* Center align items */
+    margin-top: 40px;
+}
+
+.project-item, .service-item {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;         /* Rounded corners for a softer look */
+}
+
+.project-item img, .service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-item h3, .service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(30, 58, 95, 1);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contact-form {
+    background-color: white;
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limit the width for better form layout */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.5rem; /* Smaller font size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 0.9rem; /* Slightly smaller label text */
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 15px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem; /* Slightly smaller font size */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4052d6; /* Highlight with sky blue */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #fe012f; /* Red */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Reduced padding */
+    border-radius: 5px;
+    font-size: 1rem; /* Slightly smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #c1001a; /* Darker red on hover */
+}
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.light-theme nav {
+    background-color: rgba(74, 144, 226, 1);
+}
+
+body.light-theme nav ul li a {
+    color: white;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-theme nav {
+    background-color: #333;
+}
+
+body.dark-theme nav ul li a {
+    color: #ddd;
+}
+
+/* Navigation */
+nav {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle {
+    background-color: #fe012f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #c1001a;
+}
+
+/* Responsive Design for smaller screens */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;  /* Stack the content on small screens */
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;          /* Hero content takes up full width */
+    }
+
+    .profile-img {
+        margin-left: 0;          /* Remove margin from the image on small screens */
+        margin-top: 10px;
+    }
+
+    .projects, .services {
+        flex-direction: column;  /* Stack projects and services vertically on small screens */
+        gap: 10px;
+    }
+
+    .project-item, .service-item {
+        max-width: 100%;
+        box-shadow: none;         /* Remove shadow for small screens */
+    }
+
+    nav ul li {
+        display: block;          /* Stack navbar items vertically */
+        margin: 10px 0;
+    }
+}
